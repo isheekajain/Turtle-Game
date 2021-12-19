@@ -12,21 +12,21 @@ x = -230
 y = -100
 
 # empire turtle
-empire = Turtle("turtle")
-empire.color("black")
-empire.penup()
-empire.left(90)
-empire.goto(230, 150)
-empire.pendown()
-empire.backward(305)
-empire.penup()
-empire.goto(-35, 155)
-empire.pendown()
-empire.write("Start")
-empire.penup()
-empire.goto(-130, -155)
-empire.hideturtle()
-empire.pendown()
+umpire = Turtle("turtle")
+umpire.color("black")
+umpire.penup()
+umpire.left(90)
+umpire.goto(230, 150)
+umpire.pendown()
+umpire.backward(305)
+umpire.penup()
+umpire.goto(-35, 155)
+umpire.pendown()
+umpire.write("Start")
+umpire.penup()
+umpire.goto(-130, -155)
+umpire.hideturtle()
+umpire.pendown()
 
 turtles = []
 
@@ -53,10 +53,10 @@ while is_race_on:
         if turtle.xcor() > 211:
             is_race_on = False
             winning_color = turtle.pencolor()
-            empire.write(f" Winner: {winning_color} turtle", font="12")
-            empire.penup()
-            empire.goto(-130, -100)
-            empire.pendown()
+            umpire.write(f" Winner: {winning_color} turtle", font="12")
+            umpire.penup()
+            umpire.goto(-130, -100)
+            umpire.pendown()
             if winning_color == user_ans:
                 # print(f"You've won! The {winning_color} turtle is the winner!")
                 screen.title(f"You've won! The {winning_color} turtle is the winner!")
